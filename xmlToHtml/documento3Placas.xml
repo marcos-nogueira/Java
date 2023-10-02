@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdfeProc xmlns="http://www.portalfiscal.inf.br/mdfe" versao="3.00">
+   <MDFe>
+      <infMDFe Id="MDFe31201005886614004123580050000023231928977542" versao="3.00">
+         <ide>
+            <cUF>31</cUF>
+            <tpAmb>1</tpAmb>
+            <tpEmit>1</tpEmit>
+            <tpTransp>1</tpTransp>
+            <mod>58</mod>
+            <serie>5</serie>
+            <nMDF>4782</nMDF>
+            <cMDF>92897754</cMDF>
+            <cDV>2</cDV>
+            <modal>1</modal>
+            <dhEmi>2020-10-17T15:40:44-03:00</dhEmi>
+            <tpEmis>1</tpEmis>
+            <procEmi>0</procEmi>
+            <verProc>Planck-ONE</verProc>
+            <UFIni>MG</UFIni>
+            <UFFim>PR</UFFim>
+            <infMunCarrega>
+               <cMunCarrega>3170206</cMunCarrega>
+               <xMunCarrega>Uberlândia</xMunCarrega>
+            </infMunCarrega>
+            <infPercurso>
+               <UFPer>SP</UFPer>
+            </infPercurso>
+            <dhIniViagem>2020-10-17T15:40:44-03:00</dhIniViagem>
+         </ide>
+         <emit>
+            <CNPJ>012345678910123</CNPJ>
+            <IE>0018808510425</IE>
+            <xNome>Transportadora - XPTO</xNome>
+            <xFant>Transportadora - XPTO</xFant>
+            <enderEmit>
+               <xLgr>RODOVIA BR KM</xLgr>
+               <nro>1</nro>
+               <xCpl>GALPAO 02 CTR</xCpl>
+               <xBairro>JD EUROPA</xBairro>
+               <cMun>3170206</cMun>
+               <xMun>Uberlândia</xMun>
+               <CEP>38414583</CEP>
+               <UF>MG</UF>
+            </enderEmit>
+         </emit>
+         <infModal versaoModal="3.00">
+            <rodo>
+               <infANTT>
+                  <RNTRC>10663483</RNTRC>
+                  <infContratante>
+                     <CNPJ>05886614000136</CNPJ>
+                  </infContratante>
+               </infANTT>
+               <veicTracao>
+                  <placa>QWW7878</placa>
+                  <tara>8500</tara>
+                  <capKG>0</capKG>
+                  <capM3>0</capM3>
+                  <prop>
+                     <CNPJ>12345678933323</CNPJ>
+                     <RNTRC>04207338</RNTRC>
+                     <xNome>TRANSPORTADORA QUE FAZ ENTREGA BR LTDA</xNome>
+                     <IE>1866305230059</IE>
+                     <UF>MG</UF>
+                     <tpProp>2</tpProp>
+                  </prop>
+                  <condutor>
+                     <xNome>NOME MOTORISTA</xNome>
+                     <CPF>29292923232</CPF>
+                  </condutor>
+                  <tpRod>02</tpRod>
+                  <tpCar>02</tpCar>
+                  <UF>MG</UF>
+               </veicTracao>
+               <veicReboque>
+                  <placa>QQQ0131</placa>
+                  <tara>16000</tara>
+                  <capKG>3300</capKG>
+                  <capM3>100</capM3>
+                  <prop>
+                     <CNPJ>12345678933323</CNPJ>
+                     <RNTRC>04207338</RNTRC>
+                     <xNome>TRANSPORTADORA QUE FAZ ENTREGA BR LTDA</xNome>
+                     <IE>1866305230059</IE>
+                     <UF>MG</UF>
+                     <tpProp>2</tpProp>
+                  </prop>
+                  <tpCar>02</tpCar>
+                  <UF>MG</UF>
+               </veicReboque>
+               <veicReboque>
+                  <placa>QQQ4134</placa>
+                  <tara>16000</tara>
+                  <capKG>3300</capKG>
+                  <capM3>100</capM3>
+                  <prop>
+                     <CNPJ>12345678933323</CNPJ>
+                     <RNTRC>04207338</RNTRC>
+                     <xNome>TRANSPORTADORA QUE FAZ ENTREGA BR LTDA</xNome>
+                     <IE>1866305230059</IE>
+                     <UF>MG</UF>
+                     <tpProp>2</tpProp>
+                  </prop>
+                  <tpCar>02</tpCar>
+                  <UF>MG</UF>
+               </veicReboque>
+            </rodo>
+         </infModal>
+         <infDoc>
+            <infMunDescarga>
+               <cMunDescarga>4106902</cMunDescarga>
+               <xMunDescarga>Curitiba</xMunDescarga>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297461521288992</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297411656903893</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297481188799511</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297491191147020</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297391420143110</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297511185722947</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297401617040408</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297421611157804</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297431217831620</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297361762410382</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297471193876440</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297521828330229</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297501528496615</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297441413518422</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297451408217751</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297381218337930</chCTe>
+               </infCTe>
+               <infCTe>
+                  <chCTe>31201005886610044753210000008297371828859142</chCTe>
+               </infCTe>
+            </infMunDescarga>
+         </infDoc>
+         <seg>
+            <infResp>
+               <respSeg>1</respSeg>
+               <CNPJ>05886614000136</CNPJ>
+            </infResp>
+            <infSeg>
+               <xSeg>SOMPO SEGUROS S/A</xSeg>
+               <CNPJ>61383493000180</CNPJ>
+            </infSeg>
+            <nApol>5400019677</nApol>
+            <nAver>5400019677</nAver>
+         </seg>
+         <prodPred>
+            <tpCarga>05</tpCarga>
+            <xProd>Carga geral</xProd>
+            <infLotacao>
+               <infLocalCarrega>
+                  <CEP>38414583</CEP>
+               </infLocalCarrega>
+               <infLocalDescarrega>
+                  <CEP>80215232</CEP>
+               </infLocalDescarrega>
+            </infLotacao>
+         </prodPred>
+         <tot>
+            <qCTe>17</qCTe>
+            <qNFe>0</qNFe>
+            <vCarga>740648.55</vCarga>
+            <cUnid>01</cUnid>
+            <qCarga>112.7500</qCarga>
+         </tot>
+      </infMDFe>
+      <infMDFeSupl>
+         <qrCodMDFe>https://dfe-portal.svrs.rs.gov.br/mdfe/qrCode?chMDFe=31201005886614004123580050000023231928977542&amp;tpAmb=1</qrCodMDFe>
+      </infMDFeSupl>
+      <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+         <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+            <Reference URI="#MDFe31201005886614004123580050000023231928977542">
+               <Transforms>
+                  <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                  <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+               </Transforms>
+               <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+               <DigestValue>2HXeBeW8rtEhvo5xSzNBUNrHvRg=</DigestValue>
+            </Reference>
+         </SignedInfo>
+         <SignatureValue>Assinatura</SignatureValue>
+         <KeyInfo>
+            <X509Data>
+               <X509Certificate>certificado</X509Certificate>
+            </X509Data>
+         </KeyInfo>
+      </Signature>
+   </MDFe>
+   <protMDFe versao="3.00">
+      <infProt Id="MDFe931200013387579">
+         <tpAmb>1</tpAmb>
+         <verAplic>RS20200915181452</verAplic>
+         <chMDFe>31201005886614004123580050000023231928977542</chMDFe>
+         <dhRecbto>2020-10-17T15:40:47-03:00</dhRecbto>
+         <nProt>7878788787878</nProt>
+         <digVal>huhuhuhuhuhu=</digVal>
+         <cStat>100</cStat>
+         <xMotivo>Autorizado o uso do MDF-e</xMotivo>
+      </infProt>
+   </protMDFe>
+</mdfeProc>

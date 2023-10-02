@@ -1,0 +1,137 @@
+<html ng-app="DAMDFEApp" ng-controller="PrintController as page" xmlns:x="http://www.portalfiscal.inf.br/mdfe" xmlns:fn="http://www.w3.org/2005/xpath-functions"><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><title>Impress&atilde;o de MDFe</title><link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128" rel="stylesheet"><style>
+                    body * {
+                        font-family: Arial, Helvetica, Sans-Serif;
+                        font-size: 8px;
+                    }
+
+                    *, *:before, *:after {
+                      -webkit-box-sizing: border-box;
+                      -moz-box-sizing: border-box;
+                      box-sizing: border-box;
+                    }
+
+                    div {
+                        margin: 0.4px;
+                    }
+
+                    .img {
+                        background-image: src="resources/mdf-e.jpg"
+                        background-size: contain;
+                        background-position: 0 center;
+                        background-repeat: no-repeat;
+                        height: 85px;
+                        width: 100px;
+                    }
+
+                    #page {
+                        display: flex;
+                        flex-direction: column;
+                        height: 240mm;
+                        width: 190mm;
+                    }
+
+                    .row {
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+                    }
+
+                    .column {
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                    }
+
+                    .border {
+                        border: 1px solid black;
+                    }
+
+                    .header {
+                        height: 25%;
+                    }
+
+                    .center {
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .fill {
+                        height: 100%;
+                    }
+
+                    .title {
+                        font-size: 14px;
+                    }
+
+                    .capitalized {
+                        font-size: 24px;
+                    }
+
+                    #barCode {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%;
+                    }
+
+                    .m-left {
+                        margin-left: 3px;
+                    }
+
+                    .m-top {
+                        margin-top: 3px;
+                    }
+
+                </style></head><body><div id="page"><div class="row header"><div class="column"><div class="row" style="height: 80%"><div class="border" style=" width: 45%"><div class="m-left" style="text-align: center"><img width="120px" style="margin-top: 10px;margin-bottom: 10px;" src="resources/mdf-e.jpg" class="logotipo"></div><table style="width: 100%;"><tr><td colspan="2">Transportadora - XPTO</td></tr><tr><td colspan="2"><div style="display: inline;"><div style="display: inline;">RODOVIA BR KM</div><div style="display: inline;">
+                                                    , 1</div><div style="display: inline;">
+                                                    , GALPAO 02 CTR</div><div style="display: inline;">38414583</div><div style="display: inline;">
+                                                    , JD EUROPA</div></div></td></tr><tr><td colspan="2"><div><div style="display: inline;">Uberl&acirc;ndia</div><div style="display: inline;">
+                                                    /
+                                                </div><div style="display: inline;">MG</div></div></td></tr><tr><td><div><div style="display: inline;">
+                                                    CNPJ:
+                                                </div><div style="display: inline;">012345678910123</div></div></td><td><div><div style="display: inline;">
+                                                    RNTRC:
+                                                </div><div style="display: inline;">10663483</div></div></td></tr><tr><td><div style="display: inline;">
+                                                IE:
+                                            </div><div style="display: inline;">0018808510425</div></td><td><div style="display: inline;">
+                                                Telefone:
+                                            </div></td></tr><tr><td colspan="6"><div style="display: inline;">
+                                                E-mail:
+                                            </div></td></tr></table></div><div class="border" style="width: 55%;"><input style="display: none" id="linkQrCode" value="https://dfe-portal.svrs.rs.gov.br/mdfe/qrCode?chMDFe=31201005886614004123580050000023231928977542&amp;tpAmb=1"><div id="qrCodeBox" style="padding-left: 25px; padding-top:15px"></div></div></div><div class="row" style="height: 20%;"><div class="border" style="width: 10%"><div style="display: block;"><div class="row center">
+                                            Modelo
+                                        </div><div class="row center">58</div></div></div><div class="border" style="width: 10%"><div style="display: block;"><div class="row center">
+                                            S&eacute;rie
+                                        </div><div class="row center">5</div></div></div><div class="border" style="width: 15%"><div style="display: block;"><div class="row center">
+                                            N&uacute;mero
+                                        </div><div class="row center">4782</div></div></div><div class="border" style="width: 10%"><div style="display: block;"><div class="row center">
+                                            Folha
+                                        </div><div class="row center">
+                                            1/1
+                                        </div></div></div><div class="border" style="width: 40%"><div style="display: block;"><div class="row center">
+                                            Data e Hora de Emiss&atilde;o
+                                        </div><div class="row center">17/10/2020&nbsp;15:40h</div></div></div><div class="border" style="width: 15%"><div style="display: block;"><div class="row center"><span>UF Carreg.</span></div><div class="row center">MG</div></div></div><div class="border" style="width: 15%"><div style="display: block;"><div class="row center"><span>UF Descarr.</span></div><div class="row center">PR</div></div></div></div></div><div class="column"><div class="border" style="height: 25%"><div class="row center title" style="height: 50%;">
+                                    DAMDF-e
+                                </div><div class="row center">
+                                    Documento Auxiliar de Manifesto Eletr&ocirc;nico de Documentos Fiscais
+                                </div></div><div class="border" style="height: 35%"><div id="barCode"></div></div><div class="border" style="height: 20%"><div class="row"><span class="m-left">Chave de acesso</span></div><div class="row center" style="margin-top: 8px;">31201005886614004123580050000023231928977542</div></div><div class="border" style="height: 20%;"><div class="row"><span class="m-left">Protocolo de Autoriza&ccedil;&atilde;o de Uso</span></div><div class="row center" style="margin-top: 8px;">7878788787878</div></div></div></div><div class="border row center" style="height: 2%;"><span>Modal Rodovi&aacute;rio de Carga</span></div><div class="row" style="height: 8%;"><div class="border column"><div class="row"><span class="m-left m-top">CIOT</span></div></div><div class="border column"><div class="row"><span class="m-left m-top">Qtd. CTe</span></div><div class="row center capitalized fill">17</div></div><div class="border column"><div class="row"><span class="m-left m-top">Qtd. NFe</span></div><div class="row center capitalized fill"></div></div><div class="border column"><div class="row"><span class="m-left m-top">Peso Total</span></div><div class="row center capitalized fill">113&nbsp;kg
+                            </div></div><div class="border column"></div></div><div class="row" style="height: 2%;"><div class="border column" style="justify-content: center;"><span class="m-left">Ve&iacute;culo</span></div><div class="border column" style="justify-content: center;"><span class="m-left">Condutor</span></div></div><div class="row" style="height: 2%;"><div class="border column" style="justify-content: center;"><span class="m-left">Placa</span></div><div class="border column" style="justify-content: center;"><span class="m-left">RNTRC</span></div><div class="border column" style="justify-content: center;"><span class="m-left">CPF</span></div><div class="border column" style="justify-content: center;"><span class="m-left">Nome</span></div></div><div class="row" style="height: 2%;"><div class="border column" style="justify-content: center;"><span class="m-left">QWW7878</span></div><div class="border column" style="justify-content: center;"><span class="m-left">10663483</span></div><div class="border column" style="justify-content: center;"><span class="m-left">29292923232</span></div><div class="border column" style="justify-content: center;"><span class="m-left">NOME MOTORISTA</span></div></div><div class="row" style="height: 2%;"><div class="border column" style="justify-content: center;"><span class="m-left">QQQ0131</span></div><div class="border column" style="justify-content: center;"><span class="m-left">10663483</span></div><div class="border column" style="justify-content: center;"><span class="m-left"></span></div><div class="border column" style="justify-content: center;"><span class="m-left"></span></div></div><div class="row" style="height: 2%;"><div class="border column" style="justify-content: center;"><span class="m-left">QQQ4134</span></div><div class="border column" style="justify-content: center;"><span class="m-left">10663483</span></div><div class="border column" style="justify-content: center;"><span class="m-left"></span></div><div class="border column" style="justify-content: center;"><span class="m-left"></span></div></div><div class="row" style="height: 40%;"><div class="column"><div class="border" style="height: 60%"></div><div class="row" style="height: 25px;"><div class="border column" style="justify-content: center;"><span class="m-left">Vale Ped&aacute;gio</span></div></div><div style="display: flex; flex-direction: row; width: 100%; height: 25px;"><div class="border column" style="justify-content: center;"><span class="m-left">CNPJ Respons&aacute;vel</span></div><div class="border column" style="justify-content: center;"><span class="m-left">CNPJ Fornecedor</span></div><div class="border column" style="justify-content: center;"><span class="m-left">N&ordm; Comprovante</span></div></div><div class="row" style="height: 36%;"><div class="border column"></div><div class="border column"></div><div class="border column"></div></div></div><div class="row" style="flex: 1;"><div class="border column"></div><div class="border column"></div></div></div><div class="row" style="height: 2%;"><div style="flex: 1;"><span class="m-left">Observa&ccedil;&otilde;es</span></div><div style="flex: 1;"><span class="m-left">Reservado ao Fisco</span></div></div><div class="row" style="height: 20%;"><div class="border column"></div><div class="border column"></div></div></div><script src="/planck/resource?public.base.angular.angular-min"></script><script src="/planck/resource?public.base.services.qrcode.min"></script><script type="text/javascript">
+                    var app = angular.module('DAMDFEApp', []);
+                    window.onload = function() {
+						var qrText = document.getElementById("linkQrCode");
+						if (qrText) 
+							var qrcode = new QRCode(document.getElementById("qrCodeBox"), {
+								text : qrText.value,
+								width : 140,
+								height : 140
+							});
+					};
+                </script><script src="/planck/resource?public.base.services.barcode-js"></script><script type="text/javascript">
+                    app.controller('PrintController', ['barcode'
+                        , function(barcode) {
+
+                            let container = document.createElement('p');
+                            barcode.codeCode128C('31201005886614004123580050000023231928977542', container, 1);
+                            document.getElementById("barCode").appendChild(container);
+                        }
+                    ]);
+                </script></body></html>
